@@ -1,3 +1,4 @@
+import { FeatureService } from './services/feature.service';
 import { MakeService } from './services/make.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
@@ -35,7 +36,8 @@ import { HttpModule } from '@angular/http';
     ])
   ],
   providers: [
-    MakeService
+    MakeService,
+    FeatureService
   ],
   bootstrap: [AppComponent]
 })
